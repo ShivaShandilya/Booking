@@ -28,18 +28,18 @@ public class BookingController {
     private BookingService bookingService;
     private BookingRepository bookingRepository;
     private PdfService pdfService;
-    private BucketService bucketService;
+
     private TwilioService twilioService;
     private SendGridService sendGridService;
 
 
 
 
-    public BookingController(BookingService bookingService, BookingRepository bookingRepository, PdfService pdfService, BucketService bucketService, TwilioService twilioService, SendGridService sendGridService) {
+    public BookingController(BookingService bookingService, BookingRepository bookingRepository, PdfService pdfService, TwilioService twilioService, SendGridService sendGridService) {
         this.bookingService = bookingService;
         this.bookingRepository = bookingRepository;
         this.pdfService = pdfService;
-        this.bucketService = bucketService;
+
         this.twilioService = twilioService;
         this.sendGridService = sendGridService;
     }
